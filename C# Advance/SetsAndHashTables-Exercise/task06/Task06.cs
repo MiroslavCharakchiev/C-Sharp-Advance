@@ -1,6 +1,4 @@
-﻿
-
-namespace task06
+﻿namespace task06
 {
     using System;
     using System.Collections.Generic;

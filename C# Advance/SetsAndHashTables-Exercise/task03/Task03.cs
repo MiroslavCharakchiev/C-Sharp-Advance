@@ -1,14 +1,8 @@
-﻿
-using System.Collections;
-
-namespace task03
+﻿namespace task03
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
     public class Task03
     {
        public static void Main()
