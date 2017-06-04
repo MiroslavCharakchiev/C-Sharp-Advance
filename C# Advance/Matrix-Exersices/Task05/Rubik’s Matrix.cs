@@ -36,49 +36,50 @@ namespace Task05
 
                 if (direction == "up")
                 {
-                    for (int j = 0; j < moves; j++)
-                    {
-                        for (int g = 0; g < rubix.Length - 1; g++)
+                   
+                        for (int j = 0; j < moves % rubix.Length; j++)
                         {
-                            var teemp = rubix[g][position];
-                            rubix[g][position] = rubix[g + 1][position];
-                            rubix[g + 1][position] = teemp;
+                            for (int g = 0; g < rubix.Length - 1; g++)
+                            {
+                                var teemp = rubix[g][position];
+                                rubix[g][position] = rubix[g + 1][position];
+                                rubix[g + 1][position] = teemp;
+                            }
                         }
-                    }
 
                 }
                 else if (direction == "down")
                 {
-                    for (int j = 0; j < moves; j++)
+                    for (int j = 0; j < moves % rubix.Length; j++)
                     {
                         for (int g = 0; g < rubix.Length - 1; g++)
                         {
                             var teemp = rubix[rubix.Length - g - 1][position];
-                            rubix[rubix.Length - g -1][position] = rubix[rubix.Length - g -2][position];
+                            rubix[rubix.Length - g - 1][position] = rubix[rubix.Length - g - 2][position];
                             rubix[rubix.Length - g - 2][position] = teemp;
                         }
                     }
                 }
                 else if (direction == "left")
                 {
-                    for (int j = 0; j < moves; j++)
+                    for (int j = 0; j < moves % rubix.Length; j++)
                     {
-                        for (int g = 0; g < rubix[position].Length -1 ; g++)
+                        for (int g = 0; g < rubix[position].Length - 1; g++)
                         {
                             var teemp = rubix[position][g];
-                            rubix[position][g] = rubix[position][g + 1 ];
+                            rubix[position][g] = rubix[position][g + 1];
                             rubix[position][g + 1] = teemp;
                         }
                     }
                 }
                 else if (direction == "right")
                 {
-                    for (int j = 0; j < moves; j++)
+                    for (int j = 0; j < moves % rubix.Length; j++)
                     {
                         for (int g = 0; g < rubix[position].Length - 1; g++)
                         {
-                            var teemp = rubix[position][rubix[position].Length - g -1];
-                            rubix[position][rubix[position].Length - g -1 ] = rubix[position][rubix[position].Length - g -2];
+                            var teemp = rubix[position][rubix[position].Length - g - 1];
+                            rubix[position][rubix[position].Length - g - 1] = rubix[position][rubix[position].Length - g - 2];
                             rubix[position][rubix[position].Length - g - 2] = teemp;
                         }
                     }
