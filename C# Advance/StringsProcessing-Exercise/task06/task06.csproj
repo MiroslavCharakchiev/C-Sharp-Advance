@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6CC5ADE0-2EE3-4457-992A-4F5908D913A6}</ProjectGuid>
+    <ProjectGuid>{0B7BEB6B-7C13-4704-912F-D5D52010F36A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>task01</RootNamespace>
-    <AssemblyName>task01</AssemblyName>
+    <RootNamespace>task06</RootNamespace>
+    <AssemblyName>task06</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MatchCount.cs" />
+    <Compile Include="CountMatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
