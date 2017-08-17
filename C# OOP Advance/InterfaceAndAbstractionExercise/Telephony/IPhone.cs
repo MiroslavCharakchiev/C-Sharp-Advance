@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InterfaceAndAbstractionLab
+namespace Telephony
 {
-    class Program
+    public interface IPhone
     {
-        static void Main(string[] args)
-        {
-        }
+        void Call(string[] input);
+
     }
 }

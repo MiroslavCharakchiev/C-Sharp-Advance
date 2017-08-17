@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C353CC52-A87E-4898-ADA7-B8B59943368C}</ProjectGuid>
+    <ProjectGuid>{9935F077-3CFB-4F49-8EBD-CA4F5A8166E7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>InterfaceAndAbstractionLab</RootNamespace>
-    <AssemblyName>InterfaceAndAbstractionLab</AssemblyName>
+    <RootNamespace>Library</RootNamespace>
+    <AssemblyName>Library</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circle.cs" />
-    <Compile Include="IDrawable.cs" />
-    <Compile Include="Rectangle.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="BookComparator.cs" />
+    <Compile Include="Library.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

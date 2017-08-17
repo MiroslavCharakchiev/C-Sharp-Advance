@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C353CC52-A87E-4898-ADA7-B8B59943368C}</ProjectGuid>
+    <ProjectGuid>{4EDC86CA-3B3A-4B3E-92FF-CF15C36A056A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>InterfaceAndAbstractionLab</RootNamespace>
-    <AssemblyName>InterfaceAndAbstractionLab</AssemblyName>
+    <RootNamespace>CardSuit</RootNamespace>
+    <AssemblyName>CardSuit</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,11 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circle.cs" />
-    <Compile Include="IDrawable.cs" />
-    <Compile Include="Rectangle.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="Deck.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Suits.cs" />
+    <Compile Include="TypeAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C353CC52-A87E-4898-ADA7-B8B59943368C}</ProjectGuid>
+    <ProjectGuid>{EF877FAF-739A-4437-9FF3-FD2840152D35}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>InterfaceAndAbstractionLab</RootNamespace>
-    <AssemblyName>InterfaceAndAbstractionLab</AssemblyName>
+    <RootNamespace>Telephony</RootNamespace>
+    <AssemblyName>Telephony</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Circle.cs" />
-    <Compile Include="IDrawable.cs" />
-    <Compile Include="Rectangle.cs" />
+    <Compile Include="IPhone.cs" />
+    <Compile Include="IWeb.cs" />
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Smartphone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
